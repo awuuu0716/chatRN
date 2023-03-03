@@ -9,10 +9,11 @@ module.exports = function (api) {
           root: ["./"],
           alias: {
             components: "./src/components",
-            // config: "./src/config",
+            config: "./src/config",
           },
         },
       ],
+      "module:react-native-dotenv",
     ],
   };
 };

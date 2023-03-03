@@ -1,10 +1,12 @@
 import { StyleSheet, TextInput } from "react-native";
 import { useState } from "react";
+import ChatGPT from "components/openAI/ChatGPT";
+import config from "config";
 // import ChatGPT from "../openAI/ChatGPT";
 
 export default function UserInput() {
-  const [text, onChangeText] = useState("Useless Text");
-  // const c = new ChatGPT();
+  const [text, onChangeText] = useState(config.openAIApiKey);
+  const c = new ChatGPT();
 
   return (
     <TextInput style={styles.input} onChangeText={onChangeText} value={text} />

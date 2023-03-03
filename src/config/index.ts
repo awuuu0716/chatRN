@@ -1,12 +1,11 @@
-import * as dotenv from "dotenv";
-dotenv.config();
+import { OPENAI_API_KEY } from "@env";
 
 interface Config {
   openAIApiKey: string;
 }
 
 const config: Config = {
-  openAIApiKey: process.env["OPENAI_API_KEY"] || "",
+  openAIApiKey: OPENAI_API_KEY || "",
 };
 
 export default config;

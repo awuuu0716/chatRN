@@ -4,6 +4,9 @@
   "_version": "2.0.3",
   "compilerOptions": {
     "baseUrl": "src",
+    "paths": {
+      "@env": ["../node_modules/react-native-dotenv"]
+    },
     "target": "esnext",
     "module": "commonjs",
     "types": ["react-native"],
